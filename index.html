@@ -1,68 +1,115 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My practice page</title>
+  <title>Interview Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      .navbar-default {
+        background-color: none!important;
+        border-color:none!important;
+    }
+  </style>
 </head>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-  <body>
-    <header>
-      <h1><a href="#"></a></h1>
-      
-      <nav>
-        <ul>
-          <a href="#" id="active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Signup</a>
-          <a href="#">Contact</a>
-          <a href="#">Contact us</a>
-        </ul>
-      </nav>
-      
-    </header>
-    <div class="page-wrap">
-      <div id="content">
-          <h4>Titel links</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
-        
-          <h4>Titel rechts</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
-      </div>
-      
-      <div id ="second"/>
-          <h4>Onderste titel</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
+<body>
+    <div class="container-fluid"  style="top: 0;padding:0;">
+        <div style="top: 0;">
+        <nav class="navbar navbar-inverse" style="background:orange;color:#fff;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="padding:0"><img src="images/logo.png" style="width:200px"></a>
+              </div>
+               <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a style="color:#fff;" href="#">About</a></li>
+      <li><a style="color:#fff;" href="#">Facilities Management</a></li>
+      <li><a style="color:#fff;" href="#">Design & fit</a></li>
+      <li><a style="color:#fff;" href="#">Compliance</a></li>
+      <li><a style="color:#fff;" href="#">PPM</a></li>
+      <li><a style="color:#fff;" href="#">Case studies</a></li>
+      <li><a style="color:#fff;" href="#">Contact</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span style="background:orange;padding:5px;border-radius:3px;color:#fff"><span class="glyphicon glyphicon-user"></span> Book Engineer<span></a></li>
+    </ul>
+            </div>
+          </nav>
+        </div>
     </div>
-    
-    <footer>
-      
-     <ul class="footer_links">
-      <div class="footer_menu">  
-        <ul>
-          <a href="#">About</a>
-          <a href="#">This company</a>
-          <a href="#">History</a>
-          <a href="#">Some other stuff</a>
-        </ul>
-        
-        <ul>
-          <a href="#">Sign up</a>
-          <a href="#">Disclaimer</a>
-        </ul>
-        
-        <ul>
-          <a href="#">Contact</a>
-          <a href="#">Twitter</a>
-          <a href="#">Facebook</a>
-          <a href="#">Pinterest</a>
-          <a href="#">Instagram</a>
-        </ul>
-      </div>
-      </ul>
-    </footer>
-    
-  </body>
-  
+    <div style="margin-top: -10%;z-index:-10">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+            <div class="item active">
+			
+			
+                <img src="images/banner-11.jpg" alt="test-img" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="images/banner-11.jpg" alt="test-img" style="width:100%;">
+            </div>
+            
+            <div class="item">
+                <img src="images/banner-11.jpg" alt="test-img" style="width:100%;">
+            </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+        <div class="container">
+            <div class="second-two">
+                <div class="col-lg-6 col-sm-6">
+                    <div style="padding: 100px;background:#fff;padding: 30px;background: #fff;margin-top: -25%;">
+                        <img style="width: 100%;height:420px;" src="images/banner-2.jpg"/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <h3 style="margin-top: 15%;">
+                        Our Mission is Design & Develop The Best Interiors
+                    </h3>
+                    <p style="margin-bottom: 40px;;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis illum neque, recusandae alias fugiat? Fugit nihil, dignissimos vel amet quis consequuntur, non, reprehenderit maxime vitae ducimus laudantium dicta a?
+                    </p>
+                    <a href="" style="padding: 10px 30px;text-decoration:none;font-size:14px;border-radius:100px;background: orange;border:1px solid black;margin-top:20px">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top:40px">
+            <div class="col-lg-4 col-sm-12">
+                <img src="images/img1.jpg" style="width:100px;height:100px;"/>
+                <h3>Design and Fit</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, eius neque blanditiis labore laudantium atque quos iusto, adipisci earum, at nemo dolorem assumenda mollitia facilis consequatur saepe sed architecto.</p>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                 <img src="images/img1.jpg" style="width:100px;height:100px;"/>
+                <h3>Compliance & PPM</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, eius neque blanditiis labore laudantium atque quos iusto, adipisci earum, at nemo dolorem assumenda mollitia facilis consequatur saepe sed architecto.</p>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                 <img src="images/img1.jpg" style="width:100px;height:100px;"/>
+                <h3>Facilities Management</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor, eius neque blanditiis labore laudantium atque quos iusto, adipisci earum, at nemo dolorem assumenda mollitia facilis consequatur saepe sed architecto.</p>
+            </div>
+        </div>
+</body>
 </html>
